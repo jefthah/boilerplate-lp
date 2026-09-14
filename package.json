@@ -8,8 +8,10 @@
     },
     "scripts": {
         "build": "vite build",
+        "build:static": "vite build --config vite.static.config.ts",
         "build:ssr": "vite build && vite build --ssr",
         "dev": "vite",
+        "preview:static": "vite preview --config vite.static.config.ts",
         "format": "prettier --write resources/",
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix",
